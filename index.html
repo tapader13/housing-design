@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/89d5465652.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'rgb(33,33,33)',
+              secondary: 'rgb(73,73,73)',
+              tertiary: 'rgb(171,239,95)',
+              accent: 'rgb(115,115,115)',
+              footer: 'rgb(28,28,28)',
+            },
+            fontFamily: {
+              manrope: ['Manrope', 'sans-serif'],
+            },
+            backgroundImage: {
+              primary: "url('assets/bg.jpg')",
+              secondary:
+                'linear-gradient(to right top, #ffffff 60%, #d9dbde 100%)',
+              third: 'linear-gradient(to right, #f3f4f5 0%, #d9dbde 100%)',
+              fourth: 'linear-gradient(#FFFFFF 0%, #FFFFFF 100%)',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-manrope">
+    <header class="bg-secondary">
+      <nav class="w-[83%] mx-auto py-5">
+        <div class="flex items-center justify-between">
+          <div class="">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-tertiary h-10 w-10 rounded-full flex justify-center items-center rotate-45 text-xl"
+                ><i class="fa-solid fa-arrow-up"></i
+              ></span>
+              <h1 class="text-[32px] leading-[44px] font-extrabold">
+                Rinterio
+              </h1>
+            </div>
+          </div>
+          <div class="hidden sm:flex">
+            <a class="btn btn-ghost text-xl font-extrabold text-secondary"
+              >Home</a
+            >
+            <a class="btn btn-ghost text-xl font-normal text-accent"
+              >Services</a
+            >
+            <a class="btn btn-ghost text-xl font-normal text-accent"
+              >Portfolio</a
+            >
+            <a class="btn btn-ghost text-xl font-normal text-accent">Blogs</a>
+            <a class="btn btn-ghost text-xl font-normal text-accent"
+              >Contact Us</a
+            >
+          </div>
+          <div class="sm:flex items-center gap-5 hidden">
+            <button class="btn btn-ghost bg-white btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            <button class="btn btn-ghost bg-white btn-circle">
+              <i class="fa-solid fa-cart-shopping text-xl"></i>
+            </button>
+            <button class="btn h-[3.5rem] btn-ghost rounded-full bg-tertiary">
+              <div class="flex items-center gap-2">
+                <h3 class="text-xl font-extrabold text-footer">Book Consult</h3>
+                <span
+                  class="bg-black text-white h-10 w-10 rounded-full flex justify-center items-center rotate-45 text-xl"
+                >
+                  <i class="fa-solid fa-arrow-up"></i
+                ></span>
+              </div>
+            </button>
+          </div>
+          <div
+            class="sm:hidden dropdown flex items-center justify-center btn-ghost bg-white btn-circle"
+          >
+            <button class="">
+              <i class="fa-solid fa-bars text-xl text-accent"></i>
+            </button>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 right-0 top-10 shadow"
+            >
+              <a class="btn btn-ghost text-xl font-extrabold text-secondary"
+                >Home</a
+              >
+              <a class="btn btn-ghost text-xl font-normal text-accent"
+                >Services</a
+              >
+              <a class="btn btn-ghost text-xl font-normal text-accent"
+                >Portfolio</a
+              >
+              <a class="btn btn-ghost text-xl font-normal text-accent">Blogs</a>
+              <a class="btn btn-ghost text-xl font-normal text-accent"
+                >Contact Us</a
+              >
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-third sm:pb-28"></main>
+  </body>
+</html>
